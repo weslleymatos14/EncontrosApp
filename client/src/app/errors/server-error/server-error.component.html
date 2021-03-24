@@ -1,0 +1,14 @@
+<h4>Internal Server Error - Recarregue a página para remover o erro!</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight bold">What to do next?</p>
+    <ol>
+        <li>Open the chrome dev tools</li>
+        <li>Inspect the network tab</li>
+        <li>check the failing requests</li>
+        <li>Examine the request URL - make sure it is correct</li>
+        <li>Reproduce the error message in Postman</li>
+    </ol>
+    <p>Stack Trace</p>
+    <code class="mt-5">{{error.details}}</code>
+</ng-container>
