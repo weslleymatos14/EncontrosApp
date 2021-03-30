@@ -7,7 +7,7 @@ namespace API.Controllers
 {
     public class ErrorController : BaseApiController
     {
-        private DataContext _context;
+        private readonly DataContext _context;
         public ErrorController(DataContext context)
         {
             _context = context;
